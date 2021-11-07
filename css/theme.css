@@ -33,6 +33,12 @@
 .huerotate { filter: hue-rotate(180deg); }
 .rss.opacity { filter: opacity(50%); }
 
+.item.grayscale {
+  transition: all 0.25s ease;
+}
+.item.grayscale:hover {
+  filter: grayscale(0);
+}
 
 .nav-link {
   color: var(--bs-gray-100);
