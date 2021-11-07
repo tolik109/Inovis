@@ -56,11 +56,11 @@ $(document).ready(function() {
             items:5
         },
         768:{
-            items:10,
+            items:11,
             autoWidth:true
         },
         1200:{
-            items:10,
+            items:11,
             autoWidth:true
         }
     }
