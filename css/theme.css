@@ -1234,3 +1234,110 @@ a.dropdown-item {
 .circles_line .letter {
     padding-right: 18px;
 }
+
+
+
+
+/* v2 */
+
+    .col_left, .col_right {
+
+    background-image: url(./images/1px.jpg);
+  }
+ /* .circles_lines_list {
+    -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  padding-left: 0;
+}
+*/
+  .circles_lines_list {
+  grid-template-areas: 
+            "a d"
+            "b e"
+            "c f";
+}
+.circles_lines_list .item:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: var(--white-color);
+    position: absolute;
+    margin-left: -45px;
+    border-radius: 100%;
+}
+.circles_lines_list .item {
+    padding-left: 45px;
+    background-image: url(/images/1px.jpg);
+    background-repeat: repeat-y;
+    background-position: 11px;
+    margin-bottom: 0;
+    padding-right: 30px;
+
+}
+.item.a {
+  grid-area: a;
+}
+.item.b {
+  grid-area: b;
+}
+.item.c {
+  grid-area: c;
+}
+.item.d {
+  grid-area: d;
+}
+.item.e {
+  grid-area: e;
+}
+.item.f {
+  grid-area: f;
+}
+
+.circles_lines_list {
+  font-size: 18px;
+    grid-template-areas:
+        "a d"
+        "b e"
+        "c f"
+        "last last";
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.circles_lines_list .letter {
+    padding-right: 18px;
+}
+.circles_lines_list .letter, .circles_lines_list p {
+    display: table-cell;
+}
+.circles_lines_list .item {
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+ .circles_lines_list .last {
+     padding-bottom: 0;
+}
+.circles_lines_list ul.list_minus {
+    margin-top: 18px;
+    margin-left: 34px;
+}
+
+@media only screen and (max-width : 768px) {
+  .circles_lines_list {
+  font-size: 18px;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "last";
+    grid-template-columns: 1fr;
+    display: grid;
+}
+.item.last {
+  grid-area: last;
+}
+}
