@@ -39,7 +39,6 @@
 .item.grayscale:hover {
   filter: grayscale(0);
 }
-
 .nav-link {
   color: var(--bs-gray-100);
 }
@@ -84,8 +83,67 @@ a#all_solutions {
   width: fit-content;
   padding: 20px 30px;
 }
+ul.list_minus {
+  list-style: none;
+  margin: 0
+}
+.circles_line ul.list_minus {
+    margin-top: 18px;
+    margin-left: 34px;
+}
+ul.list_minus li{
+ position: relative;
+ padding-bottom: 16px;
+ font-size: 15px;
+}
 
+ul.list_minus li:before {
+  content:  "—";
+  position: absolute;
+  left:     -32px;
+}
+.margin-100 {
+  margin-top: 100px;
+}
+.margin-70 {
+  margin-top: 70px;
+}
+  .userimage img.img.img-responsive {
+    width: 100%;
+    border-radius: 100%;
+    border: 2px solid var(--main-color-green);
+    margin: 0 auto;
+    display: block;
+}
 
+.userimage img.img.img-responsive {
+    max-width: 82px;
+}
+.managment_item .username {
+  color:var(--main-color-green);
+}
+.managment_item .username .u_name {
+font-size: 32px;
+line-height: 145%;
+}
+.managment_item .username .u_position {
+font-size: 18px;
+line-height: 145%;
+}
+.managment_item {
+  border-top: 1px solid rgba(234, 234, 234, 0.29);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width : 768px) {
+.userimage img.img.img-responsive {
+    max-width: 50%;
+}
+.managment_item .username {
+    text-align: center;
+}
+}
 .blk {
   padding-top: 140px;
   align-items: center;
@@ -701,10 +759,6 @@ a.dropdown-item {
 }
 
 
-
-
-
-
 /* projects carousel */
 
 .owl-carousel#projects-carousel .owl-stage {
@@ -1133,3 +1187,50 @@ a.dropdown-item {
   }
 }
 
+
+
+
+
+
+
+ .circles_line {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .col_left, .col_right {
+    width: 100% !important;
+    height: 100% !important;
+    padding-left: 45px;
+    background-image: url(/images/1px.jpg);
+    background-repeat: repeat-y;
+    background-position: 11px;
+    margin-bottom: 50px;
+    padding-right: 30px;
+  }
+  .col_left:before, .col_right:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: var(--white-color);
+    position: absolute;
+    margin-left: -45px;
+    border-radius: 100%;
+  }
+  .col_left {
+  }
+  .col_right {
+  }
+  .circles_line .letter, .circles_line p {
+    display: table-cell;
+}
+  .circles_line:last-child .col_left,
+  .circles_line:last-child .col_right {
+     background-image:none;
+}
+.circles_lines {
+  margin-top: 80px;
+}
+.circles_line .letter {
+    padding-right: 18px;
+}
