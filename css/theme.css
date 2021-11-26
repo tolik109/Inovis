@@ -149,6 +149,7 @@ line-height: 145%;
   align-items: center;
   /*justify-content: center;*/
 }
+/*
 .bgimage {
   background-image: url(/images/inovis_background_image.png);
   background-position: right;
@@ -158,7 +159,15 @@ line-height: 145%;
   background-color: #050812;
   background-position: calc(95vw - 100px) 0;
   background-attachment: fixed;
+}*/
+
+.bgimage {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #22C1D7;
+    background-image: radial-gradient(200vw 100vh at center center, #000000 2.22%, #081335 48.26%, #000000 76.83%);
 }
+
 .blk .img {
   display: flex;
   max-width: 39vw;
@@ -651,6 +660,10 @@ a.dropdown-item {
 
 }
 @media only screen and (min-width : 768px) {
+
+.bgimage {
+    background-image: radial-gradient(140vw 200vh at center center, #000000 2.22%, #081335 48.26%, #000000 76.83%);
+}
 
   h1.title, h1 {
     font-size: 2.4vw;
@@ -1371,3 +1384,62 @@ a.dropdown-item {
   grid-area: last;
 }
 }
+
+
+
+/* Animate SVG */
+
+/* SVG Classes */
+.solution-item, 
+.projects-item {
+  transform: scale(1);
+  transition: all 0.25s ease;
+}
+
+svg fill, svg path, svg rect {
+  transition: all 0.25s ease;
+}
+svg .stroke-second-color-green {
+  stroke: var(--second-color-green);
+}
+svg .fill-second-color-green {
+  fill: var(--second-color-green);
+}
+svg .stroke-white {
+  stroke: var(--white-color);
+}
+svg .fill-white {
+  fill: var(--white-color);
+}
+
+/* SVG Hover Classes */
+.solution-card:hover {
+  border: 2px solid var(--white-color);
+}
+.projects-card:hover {
+  border: 1px solid var(--white-color);
+}
+.solution-item:hover {
+  transform: scale(0.98);
+}
+.projects-item:hover {
+  transform: scale(1);
+}
+.solution-item:hover svg .stroke-second-color-green,
+.projects-item:hover svg .stroke-second-color-green {
+  stroke: var(--white-color);
+}
+.solution-item:hover svg .fill-second-color-green,
+.projects-item:hover svg .fill-second-color-green {
+  fill: var(--white-color);
+}
+.solution-item:hover svg .stroke-white,
+.projects-item:hover svg .stroke-white {
+  stroke: var(--second-color-green);
+}
+.solution-item:hover svg .fill-white,
+.projects-item:hover svg .fill-white {
+  fill: var(--second-color-green);
+}
+
+/* Animate SVG */
