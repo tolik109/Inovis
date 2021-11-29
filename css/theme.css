@@ -60,6 +60,9 @@ body {
   font-weight: 400;
   font-size: 14px;
 }   
+body {
+  background-color: #081335;
+}
 h1, h2, h3, h4, h5, .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -165,7 +168,8 @@ line-height: 145%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #22C1D7;
-    background-image: radial-gradient(200vw 100vh at center center, #000000 2.22%, #081335 48.26%, #000000 76.83%);
+    /*background-image: radial-gradient(200vw 100vh at center center, #000000 2.22%, #081335 48.26%, #000000 76.83%);*/
+    background-image: radial-gradient(200vw 100vh at center center, #000000 3%, transparent 48.26%, transparent 76.83%);
 }
 
 .blk .img {
@@ -662,7 +666,8 @@ a.dropdown-item {
 @media only screen and (min-width : 768px) {
 
 .bgimage {
-    background-image: radial-gradient(140vw 200vh at center center, #000000 2.22%, #081335 48.26%, #000000 76.83%);
+    /*background-image: radial-gradient(140vw 200vh at center center, #000000 2.22%, transparent 48.26%, transparent 76.83%);*/
+    background-image: radial-gradient(160vw 250vh at center center, #000000 3%, transparent 48.26%, transparent 76.83%);
 }
 
   h1.title, h1 {
@@ -1283,9 +1288,7 @@ a.dropdown-item {
 
 
 /* v2 */
-
     .col_left, .col_right {
-
     background-image: url(./images/22px.png);
   }
  /* .circles_lines_list {
@@ -1443,3 +1446,93 @@ svg .fill-white {
 }
 
 /* Animate SVG */
+
+
+
+
+
+
+
+
+/* Partners backround image slider */
+
+.img-item {
+     width: 90%;
+     height: 70px;
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     margin: 0 auto;
+     -webkit-transition: background 0.25s;
+     -moz-transition: background 0.25s;
+     -o-transition: background 0.25s;
+     transition: background 0.25s;
+   }
+    
+    /* color images */
+    .img-item#l01:hover {
+      background-image: url('./images/partners/01.png');
+    }
+    .img-item#l02:hover {
+      background-image: url('./images/partners/02.png');
+    }
+    .img-item#l03:hover {
+      background-image: url('./images/partners/03.png');
+    }
+    .img-item#l04:hover {
+      background-image: url('./images/partners/04.png');
+    }
+    .img-item#l05:hover {
+      background-image: url('./images/partners/05.png');
+    }
+    .img-item#l06:hover {
+      background-image: url('./images/partners/06.png');
+    }
+    .img-item#l07:hover {
+      background-image: url('./images/partners/07.png');
+    }
+    .img-item#l08:hover {
+      background-image: url('./images/partners/08.png');
+    }
+    .img-item#l09:hover {
+      background-image: url('./images/partners/09.png');
+    }
+    .img-item#l10:hover {
+      background-image: url('./images/partners/010.png');
+    }
+
+    /* color images */
+
+    /* gray images */
+    .img-item#l01 {
+      background-image: url('./images/partners/01-grey.png');
+    }
+    .img-item#l02 {
+      background-image: url('./images/partners/02-grey.png');
+    }
+    .img-item#l03 {
+      background-image: url('./images/partners/03-grey.png');
+    }
+    .img-item#l04 {
+      background-image: url('./images/partners/04-grey.png');
+    }
+    .img-item#l05 {
+      background-image: url('./images/partners/05-grey.png');
+    }
+    .img-item#l06 {
+      background-image: url('./images/partners/06-grey.png');
+    }
+    .img-item#l07 {
+      background-image: url('./images/partners/07-grey.png');
+    }
+    .img-item#l08 {
+      background-image: url('./images/partners/08-grey.png');
+    }
+    .img-item#l09 {
+      background-image: url('./images/partners/09-grey.png');
+    }
+    .img-item#l10 {
+      background-image: url('./images/partners/010-grey.png');
+    }
+    /* gray images */
+    /* Partners backround image slider */

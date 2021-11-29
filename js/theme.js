@@ -9,6 +9,7 @@ if (rtl_document){
 /* RTL */
 $(document).ready(function() {
 
+
    $('#solution-carousel').owlCarousel({
     margin:30,
     dots:true,
@@ -65,6 +66,37 @@ $(document).ready(function() {
         }
     }
 });
+
+
+$('#partners-bg').owlCarousel({
+    lazyLoad:true,
+    loop:false,
+    dots:true,
+    //rtl:rtl,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            margin:0
+        },
+        450:{
+            items:2,
+            autoWidth:false,
+            margin:10
+        },
+        768:{
+            items:5,
+            autoWidth:false,
+            margin:30
+        },
+        1200:{
+            items:10,
+            autoWidth:false,
+            margin:35
+        }
+    }
+});
+      
 
    $('#power-bi-carousel').owlCarousel({
     margin:30,
@@ -143,3 +175,14 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+var bg = $(".bgimage");
+
+function resizeBackground() {
+    bg.height($(window).height());
+}
+
+$(window).resize(resizeBackground);
+resizeBackground();
