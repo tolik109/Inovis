@@ -7,7 +7,9 @@ if (rtl_document){
     rtl=true;
 }
 /* RTL */
+
 $(document).ready(function() {
+
 
 
    $('#solution-carousel').owlCarousel({
@@ -46,6 +48,12 @@ $(document).ready(function() {
         }
     }
 });
+
+
+
+
+
+
    $('#partners-carousel').owlCarousel({
     loop:false,
     margin:10,
@@ -69,29 +77,28 @@ $(document).ready(function() {
 
 
 $('#partners-bg').owlCarousel({
-    lazyLoad:true,
-    loop:false,
+    loop:true,
+    autoplayHoverPause:true,
     dots:true,
+    autoplay:true,
+    autoplayTimeout:2500,
     //rtl:rtl,
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:2,
             margin:0
         },
         450:{
-            items:2,
-            autoWidth:false,
+            items:3,
             margin:10
         },
         768:{
             items:5,
-            autoWidth:false,
             margin:30
         },
         1200:{
-            items:10,
-            autoWidth:false,
+            items:9,
             margin:35
         }
     }
@@ -161,8 +168,8 @@ $('#partners-bg').owlCarousel({
 });
 
 
-   /* inline SVG */
-   inlineSVG.init({
+/* inline SVG */
+inlineSVG.init({
       svgSelector: 'img.svg',
       initClass: 'js-inlinesvg',
   }, function () {
@@ -170,11 +177,14 @@ $('#partners-bg').owlCarousel({
 });
    /* inline SVG */
 
-   $('nav .icon').click(function(){
+
+$('nav .icon').click(function(){
       $(this).toggleClass('active');
   });
 
 });
+
+
 
 
 

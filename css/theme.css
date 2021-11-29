@@ -354,6 +354,10 @@ a.dropdown-item {
     padding-bottom: 35px;
     margin: 0;
   }
+  #blog-page .blog-item .text-container {
+    padding-bottom: 60px;
+    margin: 0;
+}
   .blog-item .img img {
     width: 100%;
     padding-bottom: 30px;
@@ -361,6 +365,9 @@ a.dropdown-item {
   .blog-item {
     padding-bottom: 150px;
   }
+  #blog-page .blog-item {
+    padding-bottom: 100px;
+}
   /* blog */ 
 
 
@@ -782,8 +789,36 @@ a.dropdown-item {
 .owl-carousel#projects-carousel .owl-stage {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-template-areas:
+        "g1 g2 g3"
+        "g4 g5 g6"
+        "g7 g7 g7";
 }
+.owl-carousel#projects-carousel .owl-item:nth-child(1) {
+   grid-area: g1;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(2) {
+   grid-area: g2;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(3) {
+   grid-area: g3;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(4) {
+   grid-area: g4;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(5) {
+   grid-area: g5;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(6) {
+   grid-area: g6;
+}
+.owl-carousel#projects-carousel .owl-item:nth-child(7) {
+   grid-area: g7;
+}
+
+
+
 .owl-carousel#projects-carousel .projects-item {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
