@@ -313,7 +313,6 @@ a.dropdown-item {
   }
 
 
-
   /* blog */
 
   .btn {
@@ -355,7 +354,7 @@ a.dropdown-item {
     margin: 0;
   }
   #blog-page .blog-item .text-container {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
     margin: 0;
 }
   .blog-item .img img {
@@ -366,7 +365,7 @@ a.dropdown-item {
     padding-bottom: 150px;
   }
   #blog-page .blog-item {
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
   /* blog */ 
 
@@ -636,6 +635,13 @@ a.dropdown-item {
 
 @media only screen and (min-width : 559px) {
 
+#blog-page .blog-item {
+    padding-bottom: 100px;
+}
+#blog-page .blog-item .text-container {
+    padding-bottom: 0px;
+    margin: 0;
+}
   .solution-card {
     padding: 30px 40px;
   }
